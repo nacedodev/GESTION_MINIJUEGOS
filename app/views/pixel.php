@@ -5,7 +5,7 @@
             background-image: url('./app/img/pixel.avif');
             background-size: cover;
             background-repeat: no-repeat;
-            filter: blur(6px); /* Cambia "5px" por la cantidad de desenfoque deseada */
+            filter: blur(6px); 
             position: fixed;
             top: 0;
             left: 0;

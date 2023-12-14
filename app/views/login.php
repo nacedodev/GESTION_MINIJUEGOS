@@ -131,7 +131,7 @@ button{
 
 
         input::placeholder {
-            opacity: 0.1; /* Aquí puedes ajustar el valor de opacidad según tus necesidades */
+            opacity: 0.1; 
         }
         
         @keyframes hidetext{
