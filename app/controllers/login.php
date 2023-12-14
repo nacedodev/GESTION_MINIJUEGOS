@@ -71,7 +71,7 @@ class ControladorLogin {
     }
     
 
-    public function registrarAdmin() {
+    public function registroInstalacion() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $email = $_POST['email'];
             $nombre = $_POST['nombre'];
@@ -80,7 +80,6 @@ class ControladorLogin {
             
             if ($this->objLogin->registro($email,$password,$nombre,$perfil)) {
                $this->view = 'super'; 
-                
             }
             else {
                 $this->mensaje = 'Error al registrar';

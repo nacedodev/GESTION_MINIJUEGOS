@@ -168,7 +168,7 @@
     <?php if(isset($_GET['mensaje'])): ?> <!-- Si nos llega algún tipo de mensaje desde el controlador , lo mostramos-->
         <p id="error"><?php echo $_GET['mensaje']; ?></p>
     <?php endif; ?>
-    <form method="post" action="index.php?controller=login&action=registrarAdmin">
+    <form method="post" action="index.php?controller=login&action=registroInstalacion">
         <span>administrador general</span>
         <h3>Registro</h3>
     
