@@ -61,11 +61,14 @@ class ControladorLogin {
             case 'p':
                 $vista = 'citykids'; 
                 break;
+            case 't':
+                $vista = 'citykids'; 
+                break;
             default:
                 $vista = 'login'; // Vista predeterminada si el perfil no coincide con ninguno de los casos anteriores
                 break;
         }
-    
+        
         $this->view = $vista;
         }
     }

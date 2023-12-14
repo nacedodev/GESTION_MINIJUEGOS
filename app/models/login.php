@@ -63,8 +63,11 @@
                 $consulta->execute();
                 
                 if ($consulta->affected_rows > 0) {
+                    // Si es el primer usuario que se crea ,es decir el super administrador , asignar  el nombre y el perfil para no tener que iniciar sesion justo despues de registrarse ya que no tiene sentido 
+                    if($this->numUsuarios() == 1){
                     $_SESSION['nombre'] = $nombre;
                     $_SESSION['perfil'] = $perfil;
+                    }
                     return true; // Registro exitoso
                 }
             }
@@ -86,6 +89,4 @@
             return $minijuegos;
         }
     }
-?>
-
 
